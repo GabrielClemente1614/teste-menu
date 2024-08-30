@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", system-ui;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
+}
+
+body {
+    background-image: url(photo-1673526759327-54f1f5b27322.jpeg);
+    height: 1800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+   
+    position: sticky;
+    top: 0;
+
+}
+
+.sube {
+    position: sticky;
+}
+
+.menu {
+    width: 100vw;
+    height: 100px;
+    background-color: #292E47;
+    box-shadow: 1px 1px 5px #6b77a5cb;
+  
+   
+
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.cont button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 1%;
+    left: 86%;
+}
+
+
+.txt-inicio {
+    
+    font-size: 2em;
+    color: white;
+    padding: 26px 17px;
+}
+
+
+
+.cont-menu {
+    background-color:#8F9AC7;
+    margin-top: 15px;
+    width: 20%;
+    padding-bottom: 15px;
+    height: 300px;
+    position: absolute;
+    left: 76%;
+    border-radius: 5px 0px 0px 5px;
+    display: none;
+   
+}
+
+.cont-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+.cont-menu ul li {
+    list-style-type: none;
+    
+    margin-top: 15px;
+    
+}
+
+.cont-menu a {
+    text-decoration: none;
+  
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    transition: 0.4s;
+   
+}
+
+.cont-menu a:hover {
+  
+    color: rgb(27, 24, 24);
+}
+
+.cont-menu li:hover {
+    transform: translateX(-10px) scale(1.05);
+    transition: 0.5s;
+}
+.cont-menu button {
+    align-items: center;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.7em;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer;
+   
+    
+}
+
+@media screen and (max-width:900px) {
+
+    .cont button {
+        position: absolute;
+        left: 80%;
+    
+    }
+}
+
+@media screen and (max-width:455px) {
+
+    .cont button {
+        position: absolute;
+        left: 70%;
+    
+    }
+
+    .cont-menu {
+        background-color:#8F9AC7;
+        margin-top: 15px;
+        width: 30%;
+        padding-bottom: 15px;
+        height: 300px;
+        position: absolute;
+        left: 65%;
+        border-radius: 5px 0px 0px 5px;
+        display: none;
+       
+}
+
+}
+
+@media screen and (max-width:350px) {
+
+    .cont button {
+        position: absolute;
+        left: 60%;
+    
+    }
+
+    .cont-menu {
+        background-color:#8F9AC7;
+        margin-top: 15px;
+        width: 40%;
+        padding-bottom: 15px;
+        height: 300px;
+        position: absolute;
+        left: 52%;
+        border-radius: 5px 0px 0px 5px;
+        display: none;
+       
+}
+}
